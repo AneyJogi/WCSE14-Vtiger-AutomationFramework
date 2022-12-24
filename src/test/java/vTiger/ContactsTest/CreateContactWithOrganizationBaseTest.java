@@ -71,6 +71,8 @@ public class CreateContactWithOrganizationBaseTest extends BaseClass {
    ContactsInfoPage cip= new ContactsInfoPage(driver);
    String ContactHeader = cip.getContactHeader();
    Assert.assertEquals(ContactHeader.contains(LASTNAME), true);
+   
+   hp.LogOutOfApp(driver);
  
 	}
 	
