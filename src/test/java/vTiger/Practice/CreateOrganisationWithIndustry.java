@@ -11,17 +11,19 @@ import org.openqa.selenium.support.ui.Select;
 public class CreateOrganisationWithIndustry {
 
 	public static void main(String[] args) {
+		
 		WebDriver driver = new ChromeDriver();
+	
+		
+		driver.findElement(By.linkText("Organizations")).click();
+		//driver.findElement(By.xpath("//img[@alt='Cre\"submitButton\")).click();
 		driver.get("http://localhost:8888/");
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		
 		driver.findElement(By.name("user_name")).sendKeys("admin");
 		driver.findElement(By.name("user_password")).sendKeys("admin");
-		driver.findElement(By.id("submitButton")).click();
-		
-		driver.findElement(By.linkText("Organizations")).click();
-		driver.findElement(By.xpath("//img[@alt='Create Organization...']")).click();
+		driver.findElement(By.id("ate Organization...']")).click();
 		driver.findElement(By.name("accountname")).sendKeys("Aney1");
 		
 		WebElement dropdown = driver.findElement(By.name("industry"));

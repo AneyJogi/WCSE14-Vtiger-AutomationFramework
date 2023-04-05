@@ -5,7 +5,7 @@ import org.testng.annotations.Test;
 
 public class DataProviderPractice {
 	
-	@Test(dataProvider="PhonesData")
+	@Test(dataProvider="PhonesData")    //(dataProvider="getData")
 	public void dataProvidePractice(String Name,String Model,int price, int qty ) 
 	{
 		System.out.println("test run  => "+Name+" "+Model+" "+price+" "+qty);	 
@@ -29,8 +29,7 @@ public class DataProviderPractice {
 		data[2][1]="R13";
 		data[2][2]=25000;
 		data[2][3]=20;
-		return data;
-		
+		return data; 
 	}
 
 

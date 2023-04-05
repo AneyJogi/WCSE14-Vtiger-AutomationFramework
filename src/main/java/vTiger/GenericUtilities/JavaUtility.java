@@ -30,7 +30,7 @@ public class JavaUtility {
 	{
 		Date d = new Date();
 		return d.toString();
-	}
+	}                                                                                                                                                   
 	
     /**
      * This method will generate the current system date in specific format

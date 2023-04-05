@@ -5,7 +5,6 @@ import java.io.IOException;
 import org.apache.poi.EncryptedDocumentException;
 import org.testng.Assert;
 import org.testng.Reporter;
-import org.testng.annotations.Ignore;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
@@ -44,8 +43,8 @@ public class CreateContactWithOrganizationListernsTest extends BaseClass{
     //Step 4: Create new organization with mandatory information and save
 	 CreateNewOrganizationPage cnop= new CreateNewOrganizationPage(driver);
 	 cnop.CreateNewOrganization(ORGNAME);
-	 Reporter.log("Organization is created with"+ORGNAME,true); 
-     // Assert.fail();
+	 Reporter.log("Organization is created with" +ORGNAME,true); 
+    Assert.fail();
 	 
    //Step 5: validation for organization	
      OrganizationInfoPage oip= new OrganizationInfoPage(driver);

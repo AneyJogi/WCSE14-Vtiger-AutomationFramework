@@ -2,22 +2,11 @@ package createOrganisationTest;
 
 import java.io.IOException;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.Test;
 
-import io.github.bonigarcia.wdm.WebDriverManager;
 import vTiger.GenericUtilities.BaseClass;
-import vTiger.GenericUtilities.ExcelFileUtility;
-import vTiger.GenericUtilities.JavaUtility;
-import vTiger.GenericUtilities.PropertyFileUtility;
-import vTiger.GenericUtilities.WebDriverUtility;
 import vTiger.ObjectRepository.CreateNewOrganizationPage;
 import vTiger.ObjectRepository.HomePage;
-import vTiger.ObjectRepository.LoginPage;
 import vTiger.ObjectRepository.OrganizationInfoPage;
 import vTiger.ObjectRepository.OrganizationsPage;
 

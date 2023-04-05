@@ -2,13 +2,12 @@ package vTiger.Practice;
 
 import org.testng.annotations.Test;
 
-import net.bytebuddy.build.Plugin.Factory.UsingReflection.Priority;
-
 public class TestNGPractice {
 	
 	@Test(priority =-1,invocationCount = 2)
 	public void createCustomerTest()
 	{
+		
 		System.out.println("Create Customer");
 	}
 

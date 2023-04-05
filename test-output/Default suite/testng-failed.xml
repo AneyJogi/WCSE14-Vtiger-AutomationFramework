@@ -3,17 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="vTiger.ContactsTest.CreateContactWithOrganizationBaseTest">
+      <class name="vTiger.Practice.softAssertPractice">
         <methods>
-          <include name="asConfig"/>
-          <include name="bsConfig"/>
-          <include name="bmConfig"/>
-          <include name="amConfig"/>
-          <include name="bcConfig"/>
-          <include name="DemoTest"/>
-          <include name="acConfig"/>
+          <include name="hardAssertPractice"/>
         </methods>
-      </class> <!-- vTiger.ContactsTest.CreateContactWithOrganizationBaseTest -->
+      </class> <!-- vTiger.Practice.softAssertPractice -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
